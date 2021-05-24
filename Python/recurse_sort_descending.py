@@ -1,5 +1,6 @@
-#  recursive descending sort for numeric lists
 def recurse_sort_des(ls, active_index=0):
+    """recursively sorts a list from biggest to smallest.
+    will both update the original list and return the result of the processing."""
     swap_val = ls[active_index]
     swap_index = active_index
     if len(ls) - 1 > active_index:
